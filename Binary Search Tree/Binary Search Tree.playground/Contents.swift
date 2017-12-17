@@ -80,6 +80,14 @@ func findMax(rootNode node:Node?)-> Int?{
     return findMax(rootNode: rightChild)
 }
 
+func findMaxHeight(rootNode node: Node?)-> Int {
+    
+    guard let node = node else {
+        return 0
+    }
+    return max(findMaxHeight(rootNode: node.leftChild), findMaxHeight(rootNode: node.rightChild)) + 1
+}
+
 var root: Node! = nil
 root = insert(rootNode: root, withData: 15)
 root = insert(rootNode: root, withData: 10)
@@ -100,3 +108,7 @@ print("\nMin Item: \(String(describing: minValue))")
 
 let maxValue = findMax(rootNode: root)
 print("\nMax Item: \(String(describing: maxValue))")
+
+
+let height = findMaxHeight(rootNode: root)
+print("\nHeight: \(height)")
