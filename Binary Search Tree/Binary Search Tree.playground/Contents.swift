@@ -16,15 +16,15 @@ func getNode(withData data: Int)->Node {
 func insert(rootNode node:Node?, withData data: Int)-> Node{
     
     guard let node = node else{
-        print("new Node \(data)")
+        //print("new Node \(data)")
         return getNode(withData: data)
     }
     if (data <= node.data) {
-        print("Left Child \(node.data)")
+        //print("Left Child \(node.data)")
         node.leftChild = insert(rootNode: node.leftChild, withData: data)
     }
     else {
-        print("Right Child \(node.data)")
+        //print("Right Child \(node.data)")
         node.rightChild = insert(rootNode: node.rightChild, withData: data)
     }
     
@@ -39,26 +39,32 @@ root = insert(rootNode: root, withData: 5)
 root = insert(rootNode: root, withData: 3)
 root = insert(rootNode: root, withData: 12)
 root = insert(rootNode: root, withData: 25)
+root = insert(rootNode: root, withData: 7)
+root = insert(rootNode: root, withData: 11)
+root = insert(rootNode: root, withData: 14)
+root = insert(rootNode: root, withData: 16)
+root = insert(rootNode: root, withData: 19)
+root = insert(rootNode: root, withData: 22)
+root = insert(rootNode: root, withData: 30)
+
 
 func search(rootNode node:Node?, forData data: Int)-> Bool{
     
     guard let node = node else {
-        print("No Data")
+        //print("No Data")
         return false
     }
     
-    print("root Node: \(String(describing: node.data)) Searth: \(data)")
-    
     if (data == node.data){
-        print("Found Data")
+        //print("Found Data")
         return true
     }
     else if (data <= node.data){
-        print("Left Child \(node.data)")
+        //print("Left Child \(node.data)")
         return search(rootNode: node.leftChild, forData: data)
     }
     else {
-        print("Right Child \(node.data)")
+        //print("Right Child \(node.data)")
         return search(rootNode: node.rightChild, forData: data)
     }
 }
@@ -139,7 +145,7 @@ print ("\n Level Order Traversal\n")
 func levelOrderTraversal(rootNode node: Node?) {
     
     guard let node = node else {
-        print("Empty Tree")
+        //print("Empty Tree")
         return
     }
 
