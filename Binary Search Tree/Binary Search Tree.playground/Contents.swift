@@ -68,7 +68,7 @@ func search(rootNode node:Node?, forData data: Int)-> Node?{
 
 print ("\nSearch Item\n")
 
-if let node =  search(rootNode: root, forData: 0){
+if search(rootNode: root, forData: 0) != nil{
     print("Item Present")
 }
 else{
@@ -89,9 +89,9 @@ func findMin(rootNode node:Node?)-> Node?{
     return findMin(rootNode: leftChild)
 }
 
-let minValue = findMin(rootNode: root)
-print("\nMin Item: \(minValue?.data)")
-
+if let minValue = findMin(rootNode: root){
+    print("\nMin Item: \(minValue.data)")
+}
 
 func findMax(rootNode node:Node?)-> Node?{
     
@@ -106,8 +106,9 @@ func findMax(rootNode node:Node?)-> Node?{
     return findMax(rootNode: rightChild)
 }
 
-let maxValue = findMax(rootNode: root)
-print("\nMax Item: \(maxValue?.data)")
+if let maxValue = findMax(rootNode: root){
+    print("\nMax Item: \(maxValue.data)")
+}
 
 func findMaxHeight(rootNode node: Node?)-> Int {
     
@@ -239,7 +240,7 @@ print ("\n Delete Node \n")
 
 func deleteNode(rootNode node: Node?, withData data: Int)-> Node? {
     
-    guard var node = node else {
+    guard let node = node else {
         return nil
     }
     
