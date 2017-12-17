@@ -54,6 +54,32 @@ func search(rootNode node:Node?, forData data: Int)-> Bool{
     }
 }
 
+func findMin(rootNode node:Node?)-> Int?{
+    
+    guard let node = node else {
+        return nil
+    }
+    
+    guard let leftChild = node.leftChild else {
+        return node.data
+    }
+    
+    return findMin(rootNode: leftChild)
+}
+
+func findMax(rootNode node:Node?)-> Int?{
+    
+    guard let node = node else {
+        return nil
+    }
+    
+    guard let rightChild = node.rightChild else {
+        return node.data
+    }
+    
+    return findMax(rootNode: rightChild)
+}
+
 var root: Node! = nil
 root = insert(rootNode: root, withData: 15)
 root = insert(rootNode: root, withData: 10)
@@ -68,3 +94,9 @@ print ("\nSearch Item\n")
 var itemPresent: Bool  = false
 itemPresent =  search(rootNode: root, forData: 0)
 print("Item Present: \(itemPresent)")
+
+let minValue = findMin(rootNode: root)
+print("\nMin Item: \(String(describing: minValue))")
+
+let maxValue = findMax(rootNode: root)
+print("\nMax Item: \(String(describing: maxValue))")
