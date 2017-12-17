@@ -205,3 +205,25 @@ func postOrderTraversal(rootNode node: Node?) {
 }
 
 postOrderTraversal(rootNode: root)
+
+print ("\n Is Tree a Binary Search Tree\n")
+
+
+func isBinarySearchTree(rootNode node: Node?, lowerLimit: Int, uppperLimit: Int)-> Bool{
+    
+    guard let node = node else {
+        return true
+    }
+    if  node.data > lowerLimit &&
+        node.data < uppperLimit &&
+        isBinarySearchTree(rootNode: node.leftChild, lowerLimit: lowerLimit, uppperLimit: node.data) &&
+        isBinarySearchTree(rootNode: node.rightChild, lowerLimit: node.data, uppperLimit: uppperLimit){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+let value = isBinarySearchTree(rootNode: root, lowerLimit:0, uppperLimit: 100)
+print(value)
