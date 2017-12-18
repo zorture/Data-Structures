@@ -90,8 +90,8 @@ func findMin(rootNode node:Node?)-> Node?{
     return findMin(rootNode: leftChild)
 }
 
-if let minValue = findMin(rootNode: root){
-    print("\nMin Item: \(minValue.data)")
+if let minValue = findMin(rootNode: root), let value = minValue.data{
+    print("\nMin Item: \(value)")
 }
 
 func findMax(rootNode node:Node?)-> Node?{
@@ -107,8 +107,8 @@ func findMax(rootNode node:Node?)-> Node?{
     return findMax(rootNode: rightChild)
 }
 
-if let maxValue = findMax(rootNode: root){
-    print("\nMax Item: \(maxValue.data)")
+if let maxValue = findMax(rootNode: root), let value = maxValue.data{
+    print("\nMax Item: \(value)")
 }
 
 func findMaxHeight(rootNode node: Node?)-> Int {
