@@ -47,6 +47,7 @@ root = insert(rootNode: root, withData: 16)
 root = insert(rootNode: root, withData: 19)
 root = insert(rootNode: root, withData: 22)
 root = insert(rootNode: root, withData: 30)
+//root = insert(rootNode: root, withData: 1)
 
 
 func search(rootNode node:Node?, forData data: Int)-> Node?{
@@ -277,11 +278,42 @@ print ("\n In-Order Traversal \n")
 levelOrderTraversal(rootNode: root)
 
 
+print ("\n In Order Successor For BST \n")
+func inOrderSuccessorForBST(rootNode node: Node?, withData data: Int)-> Node? {
+    guard let node = node else {
+        return nil
+    }
+    
+    // search the node with data
+    guard let searchNode = search(rootNode: node, forData: data) else {
+        return nil
+    }
+    
+    // Case 1 Node has Right Sub Tree
+    
+    if let rightSubTree = searchNode.rightChild {
+        if let successorNode = findMin(rootNode: rightSubTree){
+            return successorNode
+        }
+    }
+    
+    // Case 2 Node has No Right Sub Tree
+    else{
+        var ancestor = node
+        var successor: Node! = nil
+        while (ancestor !== searchNode) {
+            if (searchNode.data < ancestor.data){
+                successor = ancestor
+                ancestor = ancestor.leftChild!
+            }else{
+                ancestor = ancestor.rightChild!
+            }
+        }
+        return successor
+    }
+    return nil
+}
 
-
-
-
-
-
-
-
+if let node = inOrderSuccessorForBST(rootNode: root, withData: 7){
+    print("\n In Order Successor: \(node.data)")
+}
