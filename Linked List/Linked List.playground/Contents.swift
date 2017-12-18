@@ -28,6 +28,7 @@ func createLinkedList()->LinkedList {
 
 let root = createLinkedList()
 
+print("<<= Iteration Traversal =>>")
 func traverseLinkedList(withRoot root: LinkedList){
     
     var tempRoot = root
@@ -44,3 +45,49 @@ func traverseLinkedList(withRoot root: LinkedList){
 }
 
 traverseLinkedList(withRoot: root)
+
+print("<<= Recursion Traversal =>>")
+func traverseLinkedListRecursion(withRoot root: LinkedList?){
+    
+    guard let root = root, let value = root.data else {
+        return
+    }
+
+    traverseLinkedListRecursion(withRoot: root.nextNode)
+    print("=>> \(value)")
+}
+
+traverseLinkedListRecursion(withRoot: root)
+
+print("<<= Recursion List Reversal =>>")
+
+var head:LinkedList? = nil
+func listReversalRecursion(withRoot root: LinkedList?){
+    
+    var node:LinkedList!
+    if root != nil {
+        node = root
+    }else{
+        return
+    }
+    
+    if node.nextNode == nil {
+        head = node
+        return
+    }
+    
+    listReversalRecursion(withRoot: node.nextNode)
+    if let currentNode = node.nextNode{
+        currentNode.nextNode = node
+        node.nextNode = nil
+    }
+}
+
+listReversalRecursion(withRoot: root)
+traverseLinkedList(withRoot: head!)
+
+
+
+
+
+
