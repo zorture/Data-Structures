@@ -1,51 +1,47 @@
 //  Created by Kanwar Zorawar Singh Rana on 12/18/17.
 //  Copyright © 2017 Kanwar Zorawar Singh Rana. All rights reserved.
 
-class Node<T: Hashable> {
-    var value: T?
-    weak var parent: Node?
-    var children: [T: Node] = [:]
+class Node{
+    
+    var value: Character?
+    //weak var parent: Node?
+    var children = [Character : Node]()
     var end = false
-    
-    init(value: T? = nil, parent: Node? = nil) {
-        self.value = value
-        self.parent = parent
-        print("node created\(String(describing: value))")
-    }
-    
-    func addNode(child: T) {
-        guard children[child] == nil else {
-            print("node not created")
-            return
-        }
-        children[child] = Node(value: child, parent: self)
-    }
 }
 
-
 class Trie {
-    let root: Node<Character>
+    let root: Node
     
     init() {
         root = Node()
+        root.value = " "
+    }
+    
+    func createNod(withCharacter char: Character) -> Node{
+        let node = Node()
+        node.value = char
+        return node
     }
     
     func insertWord(word: String?){
         guard let word = word, !word.isEmpty else { return }
-        var currentNode = root
+        var previousNode: Node!
         let charArray = Array(word.lowercased())
         var currentIndex = 0
         
         while currentIndex < charArray.count {
             let character = charArray[currentIndex]
-
-            currentNode.addNode(child: character)
-            currentNode = currentNode.children[character]!
+            let newNode = createNod(withCharacter: character)
+            if(currentIndex == 0){
+                root.children[character] = newNode
+            }else{
+                previousNode.children[character] = newNode
+            }
             
+            previousNode = newNode
             currentIndex += 1
-            
             if currentIndex == charArray.count {
-                currentNode.end = true
+                newNode.end = true
             }
         }
     }
@@ -56,27 +52,30 @@ class Trie {
         var currentNode = root
         let charArray = Array(word.lowercased())
         var currentIndex = 0
-
-        while currentIndex < charArray.count ,
-            let child = currentNode.children[charArray[currentIndex]]{
+        
+        while currentIndex < charArray.count{
+            
+            let character = charArray[currentIndex]
+            
+            if let child = currentNode.children[character]{
+                currentNode = child
+            }else{
+                return false
+            }
             currentIndex += 1
-            currentNode = child
         }
-        
-        if currentIndex == charArray.count && currentNode.end == true{
-            return true
-        }
-        else{
-            return false
-        }
-        
+        return true
     }
 }
 
 let trie = Trie()
-trie.insertWord(word: "cute")
-trie.insertWord(word: "cutepy")
-trie.searchWord(word: "cute")
+trie.insertWord(word: "jute")
+trie.insertWord(word: "beer")
+trie.insertWord(word: "zoo")
+trie.insertWord(word: "zoompy")
+
+trie.searchWord(word: "zoo")
+
 
 
 
