@@ -9,7 +9,7 @@ import Foundation
 import Darwin
 
 extension String {
-    func getHas() -> Int {
+    func getHash() -> Int {
         
         // algo depends on Hash Function.
         // assuming no collision. 
@@ -50,7 +50,7 @@ extension Character {
 func rabinkarpPattern(mainString: String, patternString: String)->Bool{
     
 
-    let patternHash = patternString.getHas()
+    let patternHash = patternString.getHash()
     
     var isOver = false
     var counter = 0
@@ -60,7 +60,7 @@ func rabinkarpPattern(mainString: String, patternString: String)->Bool{
         let endIndex = mainString.index(mainString.startIndex, offsetBy: patternString.count + counter)
 
         let subString = mainString[startIndex ..< endIndex]
-        let subStringHash = String(subString).getHas()
+        let subStringHash = String(subString).getHash()
         
         print("\n Hash\n\(subStringHash)\n\(patternHash)")
         if (subStringHash == patternHash){
