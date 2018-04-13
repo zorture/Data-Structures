@@ -15,7 +15,7 @@
     //string = @"pwwkew";
     NSInteger ans = [LongestSubstring getWithSetLongestSubstringForString:string];
     NSLog(@"Longest Substring for string %@ is %ld",string, (long)ans);
-    ans = [LongestSubstring getWithSetLongestSubstringForString:string];
+    ans = [LongestSubstring getWithDictionaryLongestSubstringForString:string];
     NSLog(@"Longest Substring for string %@ is %ld",string, (long)ans);
 }
 
@@ -58,7 +58,7 @@
             NSNumber* value = [dict valueForKey:charAt];
             i = MAX([value integerValue], i);
         }
-        ans = MAX(ans, j - 1 + 1);
+        ans = MAX(ans, j - i + 1);
         [dict setObject:[NSNumber numberWithInt:(int)j+1] forKey:charAt];
     }
     return ans;
