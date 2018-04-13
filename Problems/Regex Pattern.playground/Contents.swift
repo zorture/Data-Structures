@@ -49,5 +49,11 @@ func regexPatternMatch(string: String, pattern: String)-> Bool{
     return lookUp[strLen][patLen]
 }
 
-let val = regexPatternMatch(string: "baaabab", pattern: "*****ba*****ab")
+var val = regexPatternMatch(string: "baaabab", pattern: "*****ba*****ab")
+print(val)
+
+val = regexPatternMatch(string: "xayz", pattern: "x?y*z")
+print(val)
+
+val = regexPatternMatch(string: "xyz", pattern: "x?y*z")
 print(val)

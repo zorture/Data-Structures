@@ -37,18 +37,21 @@ func hasPattern(mainString: String, patternString: String)-> Bool{
     
     var text = Array(mainString)
     var pattern = Array(patternString)
-    var posArr = patternArray(withCharArray: Array(patternString))
+    //var posArr = patternArray(withCharArray: Array(patternString))
+    var posArr = [0]
     var i = 0
     var j = 0
     while (i < text.count && j < patternString.count) {
         
         if (text[i] == pattern[j]){
+            posArr.append(j+1)
             i += 1
             j += 1
         }else{
             if(j != 0) {
                 j = posArr[j-1]
             }else{
+                posArr.append(0)
                 i += 1
             }
         }

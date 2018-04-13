@@ -62,7 +62,7 @@ func rabinkarpPattern(mainString: String, patternString: String)->Bool{
         let subString = mainString[startIndex ..< endIndex]
         let subStringHash = String(subString).getHash()
         
-        print("\n Hash\n\(subStringHash)\n\(patternHash)")
+        //print("\n Hash\n\(subStringHash)\n\(patternHash)")
         if (subStringHash == patternHash){
             print("Found string at index: \(counter)")
         }

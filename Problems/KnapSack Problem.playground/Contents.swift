@@ -21,6 +21,8 @@ func knapSackBottomUp(value: [Int], weight: [Int], maxWeight: Int)->Int {
             if (j - weight[i-1] >= 0){
                 let a = lookUp[i-1][j]
                 let b = lookUp[i-1][j-weight[i-1]] + value[i-1]
+                print("value j:: \(j) Value i:: \(i)")
+                print("value a:: \(a) Value b:: \(b)")
                 lookUp[i][j] = max(a, b)
             }else{
                 lookUp[i][j] = lookUp[i-1][j]

@@ -73,8 +73,14 @@ trie.insertWord(word: "jute")
 trie.insertWord(word: "beer")
 trie.insertWord(word: "zoo")
 trie.insertWord(word: "zoompy")
+trie.insertWord(word: "zootoy")
+trie.insertWord(word: "zooboy")
 
-trie.searchWord(word: "zoo")
+trie.searchWord(word: "zoob")
+trie.searchWord(word: "zoobiy")
+trie.searchWord(word: "jute")
+trie.searchWord(word: "juter")
+
 
 
 
