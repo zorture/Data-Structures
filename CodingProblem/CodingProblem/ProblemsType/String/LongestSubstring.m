@@ -11,7 +11,7 @@
 @implementation LongestSubstring
 
 + (void)runLongestSubstring{
-    NSString* string = @"abcabcbb";
+    NSString* string = @"abcabcdbb";
     //string = @"pwwkew";
     NSInteger ans = [LongestSubstring getWithSetLongestSubstringForString:string];
     NSLog(@"Longest Substring for string %@ is %ld",string, (long)ans);
@@ -61,8 +61,8 @@
             NSNumber* value = [dict valueForKey:charAt];
             i = MAX([value integerValue], i);
         }
-        ans = MAX(ans, j - i + 1);
-        [dict setObject:[NSNumber numberWithInt:(int)j+1] forKey:charAt];
+        ans = MAX(ans, j - i);
+        [dict setObject:[NSNumber numberWithInt:(int)j] forKey:charAt];
     }
     NSLog(@"Dictionary Solution Loop Count:: %d",loopCount);
     return ans;
