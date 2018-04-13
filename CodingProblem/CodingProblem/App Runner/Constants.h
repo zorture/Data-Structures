@@ -10,4 +10,5 @@
 #import "LongestSubstring.h"
 #import "MedianInArrays.h"
 #import "PalindromicSubstring.h"
-
+#import "ZigZagString.h"
+#import "ReverseDigits.h"

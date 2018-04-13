@@ -12,9 +12,11 @@
 
 + (void)runApp{
     
-    //[LongestSubstring runLongestSubstring];
-    //[MedianInArrays runMedianInArrays];
+    [LongestSubstring runLongestSubstring];
+    [MedianInArrays runMedianInArrays];
     [PalindromicSubstring runPalindromicSubstring];
+    //[ZigZagString runZigZagString];
+    [ReverseDigits runReverseDigits];
 }
 
 + (NSString*)charAtIndex:(NSInteger)index ForString:(NSString*)string {

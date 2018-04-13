@@ -12,6 +12,8 @@
 		B9D4C1022080FC9500EA9548 /* AppRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1012080FC9500EA9548 /* AppRunner.m */; };
 		B9D4C1062081136300EA9548 /* MedianInArrays.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1052081136300EA9548 /* MedianInArrays.m */; };
 		B9D4C10920811FBA00EA9548 /* PalindromicSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C10820811FBA00EA9548 /* PalindromicSubstring.m */; };
+		B9D4C10C208140CD00EA9548 /* ZigZagString.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C10B208140CD00EA9548 /* ZigZagString.m */; };
+		B9D4C11020814EB300EA9548 /* ReverseDigits.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C10F20814EB300EA9548 /* ReverseDigits.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +40,10 @@
 		B9D4C1052081136300EA9548 /* MedianInArrays.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedianInArrays.m; sourceTree = "<group>"; };
 		B9D4C10720811FBA00EA9548 /* PalindromicSubstring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PalindromicSubstring.h; sourceTree = "<group>"; };
 		B9D4C10820811FBA00EA9548 /* PalindromicSubstring.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PalindromicSubstring.m; sourceTree = "<group>"; };
+		B9D4C10A208140CD00EA9548 /* ZigZagString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZigZagString.h; sourceTree = "<group>"; };
+		B9D4C10B208140CD00EA9548 /* ZigZagString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZigZagString.m; sourceTree = "<group>"; };
+		B9D4C10E20814EB300EA9548 /* ReverseDigits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseDigits.h; sourceTree = "<group>"; };
+		B9D4C10F20814EB300EA9548 /* ReverseDigits.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseDigits.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 		B9D4C0F92080FBF600EA9548 /* ProblemsType */ = {
 			isa = PBXGroup;
 			children = (
+				B9D4C10D20814EA600EA9548 /* Numbers */,
 				B9D4C1032081134000EA9548 /* Arrays */,
 				B9D4C0FA2080FBF600EA9548 /* String */,
 			);
@@ -93,6 +100,8 @@
 				B9D4C0FC2080FC0C00EA9548 /* LongestSubstring.m */,
 				B9D4C10720811FBA00EA9548 /* PalindromicSubstring.h */,
 				B9D4C10820811FBA00EA9548 /* PalindromicSubstring.m */,
+				B9D4C10A208140CD00EA9548 /* ZigZagString.h */,
+				B9D4C10B208140CD00EA9548 /* ZigZagString.m */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -114,6 +123,15 @@
 				B9D4C1052081136300EA9548 /* MedianInArrays.m */,
 			);
 			path = Arrays;
+			sourceTree = "<group>";
+		};
+		B9D4C10D20814EA600EA9548 /* Numbers */ = {
+			isa = PBXGroup;
+			children = (
+				B9D4C10E20814EB300EA9548 /* ReverseDigits.h */,
+				B9D4C10F20814EB300EA9548 /* ReverseDigits.m */,
+			);
+			path = Numbers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,10 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D4C10C208140CD00EA9548 /* ZigZagString.m in Sources */,
 				B9D4C1022080FC9500EA9548 /* AppRunner.m in Sources */,
 				B9D4C0FD2080FC0C00EA9548 /* LongestSubstring.m in Sources */,
 				B9D4C1062081136300EA9548 /* MedianInArrays.m in Sources */,
 				B9D4C0F32080FBD600EA9548 /* main.m in Sources */,
+				B9D4C11020814EB300EA9548 /* ReverseDigits.m in Sources */,
 				B9D4C10920811FBA00EA9548 /* PalindromicSubstring.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
