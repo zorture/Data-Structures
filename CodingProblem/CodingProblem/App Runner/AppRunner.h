@@ -12,5 +12,5 @@
 @interface AppRunner : NSObject
 
 + (void)runApp;
-
++ (NSString*)charAtIndex:(NSInteger)index ForString:(NSString*)string;
 @end

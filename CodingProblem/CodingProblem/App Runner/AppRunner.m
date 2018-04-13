@@ -12,9 +12,17 @@
 
 + (void)runApp{
     
-    [LongestSubstring runLongestSubstring];
-    [MedianInArrays runMedianInArrays];
- 
+    //[LongestSubstring runLongestSubstring];
+    //[MedianInArrays runMedianInArrays];
+    [PalindromicSubstring runPalindromicSubstring];
 }
+
++ (NSString*)charAtIndex:(NSInteger)index ForString:(NSString*)string {
+    
+    unichar value = [string characterAtIndex:index];
+    NSString *str = [NSString stringWithFormat: @"%C", value];
+    return str;
+}
+
 
 @end

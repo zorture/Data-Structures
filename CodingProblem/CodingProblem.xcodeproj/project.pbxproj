@@ -11,6 +11,7 @@
 		B9D4C0FD2080FC0C00EA9548 /* LongestSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C0FC2080FC0C00EA9548 /* LongestSubstring.m */; };
 		B9D4C1022080FC9500EA9548 /* AppRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1012080FC9500EA9548 /* AppRunner.m */; };
 		B9D4C1062081136300EA9548 /* MedianInArrays.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1052081136300EA9548 /* MedianInArrays.m */; };
+		B9D4C10920811FBA00EA9548 /* PalindromicSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C10820811FBA00EA9548 /* PalindromicSubstring.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		B9D4C1012080FC9500EA9548 /* AppRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppRunner.m; sourceTree = "<group>"; };
 		B9D4C1042081136300EA9548 /* MedianInArrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedianInArrays.h; sourceTree = "<group>"; };
 		B9D4C1052081136300EA9548 /* MedianInArrays.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedianInArrays.m; sourceTree = "<group>"; };
+		B9D4C10720811FBA00EA9548 /* PalindromicSubstring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PalindromicSubstring.h; sourceTree = "<group>"; };
+		B9D4C10820811FBA00EA9548 /* PalindromicSubstring.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PalindromicSubstring.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 			children = (
 				B9D4C0FB2080FC0C00EA9548 /* LongestSubstring.h */,
 				B9D4C0FC2080FC0C00EA9548 /* LongestSubstring.m */,
+				B9D4C10720811FBA00EA9548 /* PalindromicSubstring.h */,
+				B9D4C10820811FBA00EA9548 /* PalindromicSubstring.m */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				B9D4C0FD2080FC0C00EA9548 /* LongestSubstring.m in Sources */,
 				B9D4C1062081136300EA9548 /* MedianInArrays.m in Sources */,
 				B9D4C0F32080FBD600EA9548 /* main.m in Sources */,
+				B9D4C10920811FBA00EA9548 /* PalindromicSubstring.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
