@@ -13,6 +13,7 @@
 + (void)runApp{
     
     [LongestSubstring runLongestSubstring];
+    [MedianInArrays runMedianInArrays];
  
 }
 
