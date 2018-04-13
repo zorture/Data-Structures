@@ -12,10 +12,8 @@
 
 + (void)runApp{
     
-    NSString* string = @"abcabcbb";
-    //string = @"pwwkew";
-    NSInteger ans = [LongestSubstring getLongestSubstringForString:string];
-    NSLog(@"Longest Substring for string %@ is %ld",string, (long)ans);
+    [LongestSubstring runLongestSubstring];
+ 
 }
 
 @end
