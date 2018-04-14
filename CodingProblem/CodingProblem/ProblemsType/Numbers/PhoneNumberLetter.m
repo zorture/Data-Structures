@@ -21,11 +21,11 @@ int loop = 0;
 
 +(void)getAllCombinationForNumber:(NSInteger)number{
     Trie* node = [PhoneNumberLetter createBSTForNumber:number];
-    [PhoneNumberLetter preOrderTracerse:node];
+    [PhoneNumberLetter preOrderTraverse:node];
 
 }
 
-+(void)preOrderTracerse:(Trie*)node{
++(void)preOrderTraverse:(Trie*)node{
     
     /*
     Trie* headNode = node;

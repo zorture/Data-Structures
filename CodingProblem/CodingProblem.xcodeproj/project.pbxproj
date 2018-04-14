@@ -16,6 +16,8 @@
 		B9D4C11020814EB300EA9548 /* ReverseDigits.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C10F20814EB300EA9548 /* ReverseDigits.m */; };
 		B9D4C1132081671000EA9548 /* PhoneNumberLetter.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1122081671000EA9548 /* PhoneNumberLetter.m */; };
 		B9D4C1172081674800EA9548 /* Trie.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1162081674800EA9548 /* Trie.m */; };
+		B9D4C11B20825BBF00EA9548 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C11A20825BBF00EA9548 /* LinkedList.m */; };
+		B9D4C11E20825BFE00EA9548 /* MergeSortedLists.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C11D20825BFE00EA9548 /* MergeSortedLists.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +52,10 @@
 		B9D4C1122081671000EA9548 /* PhoneNumberLetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberLetter.m; sourceTree = "<group>"; };
 		B9D4C1152081674800EA9548 /* Trie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trie.h; sourceTree = "<group>"; };
 		B9D4C1162081674800EA9548 /* Trie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Trie.m; sourceTree = "<group>"; };
+		B9D4C11920825BBF00EA9548 /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		B9D4C11A20825BBF00EA9548 /* LinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
+		B9D4C11C20825BFE00EA9548 /* MergeSortedLists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeSortedLists.h; sourceTree = "<group>"; };
+		B9D4C11D20825BFE00EA9548 /* MergeSortedLists.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MergeSortedLists.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 		B9D4C0F92080FBF600EA9548 /* ProblemsType */ = {
 			isa = PBXGroup;
 			children = (
+				B9D4C11820825BAE00EA9548 /* List */,
 				B9D4C10D20814EA600EA9548 /* Numbers */,
 				B9D4C1032081134000EA9548 /* Arrays */,
 				B9D4C0FA2080FBF600EA9548 /* String */,
@@ -148,8 +155,19 @@
 			children = (
 				B9D4C1152081674800EA9548 /* Trie.h */,
 				B9D4C1162081674800EA9548 /* Trie.m */,
+				B9D4C11920825BBF00EA9548 /* LinkedList.h */,
+				B9D4C11A20825BBF00EA9548 /* LinkedList.m */,
 			);
 			path = "Data Structure";
+			sourceTree = "<group>";
+		};
+		B9D4C11820825BAE00EA9548 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				B9D4C11C20825BFE00EA9548 /* MergeSortedLists.h */,
+				B9D4C11D20825BFE00EA9548 /* MergeSortedLists.m */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +232,10 @@
 				B9D4C0FD2080FC0C00EA9548 /* LongestSubstring.m in Sources */,
 				B9D4C1062081136300EA9548 /* MedianInArrays.m in Sources */,
 				B9D4C0F32080FBD600EA9548 /* main.m in Sources */,
+				B9D4C11E20825BFE00EA9548 /* MergeSortedLists.m in Sources */,
 				B9D4C11020814EB300EA9548 /* ReverseDigits.m in Sources */,
 				B9D4C1172081674800EA9548 /* Trie.m in Sources */,
+				B9D4C11B20825BBF00EA9548 /* LinkedList.m in Sources */,
 				B9D4C10920811FBA00EA9548 /* PalindromicSubstring.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

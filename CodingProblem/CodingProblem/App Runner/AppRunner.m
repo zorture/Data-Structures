@@ -18,6 +18,7 @@
     [ZigZagString runZigZagString];
     [ReverseDigits runReverseDigits];
     [PhoneNumberLetter runPhoneNumberLetter];
+    [MergeSortedLists runMergeSortedLists];
 }
 
 + (NSString*)charAtIndex:(NSInteger)index ForString:(NSString*)string {
