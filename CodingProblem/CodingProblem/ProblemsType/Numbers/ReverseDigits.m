@@ -11,7 +11,7 @@
 @implementation ReverseDigits
 
 + (void)runReverseDigits{
-    NSInteger ans = [ReverseDigits getReverseNumber:12345678909];
+    NSInteger ans = [ReverseDigits getReverseNumber:1234];
     NSLog(@"%ld",ans);
 }
 

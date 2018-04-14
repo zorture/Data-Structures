@@ -15,8 +15,9 @@
     [LongestSubstring runLongestSubstring];
     [MedianInArrays runMedianInArrays];
     [PalindromicSubstring runPalindromicSubstring];
-    //[ZigZagString runZigZagString];
+    [ZigZagString runZigZagString];
     [ReverseDigits runReverseDigits];
+    [PhoneNumberLetter runPhoneNumberLetter];
 }
 
 + (NSString*)charAtIndex:(NSInteger)index ForString:(NSString*)string {
