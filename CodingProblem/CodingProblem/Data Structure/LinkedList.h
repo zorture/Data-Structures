@@ -12,4 +12,6 @@
 @property(nonatomic,strong) NSString* value;
 @property(nonatomic,strong) LinkedList* node;
 
++(LinkedList*)createList:(NSArray*)listAr;
++ (void)displayMergedList:(LinkedList*)list;
 @end

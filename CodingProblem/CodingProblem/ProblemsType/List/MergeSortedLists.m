@@ -13,19 +13,13 @@
 
 + (void)runMergeSortedLists{
     
-    LinkedList* list1 = [MergeSortedLists createSortedList:[NSArray arrayWithObjects:@"1",@"3",@"5",@"6",@"9", nil]];
-    LinkedList* list2 = [MergeSortedLists createSortedList:[NSArray arrayWithObjects:@"2",@"4",@"6",@"7",@"8", nil]];
+    LinkedList* list1 = [LinkedList createList:[NSArray arrayWithObjects:@"1",@"3",@"5",@"6",@"9", nil]];
+    LinkedList* list2 = [LinkedList createList:[NSArray arrayWithObjects:@"2",@"4",@"6",@"7",@"8", nil]];
     LinkedList* mergedList = [MergeSortedLists mergeSortedLists1:list2 AndList2:list1];
-    [MergeSortedLists displayMergedList:mergedList];
+    [LinkedList displayMergedList:mergedList];
 }
 
-+ (void)displayMergedList:(LinkedList*)list{
-    LinkedList* head = list;
-    while (head) {
-        NSLog(@"%@",head.value);
-        head = head.node;
-    }
-}
+
 
 +(LinkedList*)mergeSortedLists1:(LinkedList*)list1 AndList2:(LinkedList*)list2{
     
@@ -85,23 +79,5 @@
     }
     return root;
 }
-
-+(LinkedList*)createSortedList:(NSArray*)listAr{
-    LinkedList* rootNode;
-    LinkedList* parentNode;
-    for (int i = 0; i< listAr.count; i++){
-        LinkedList* list = [LinkedList new];
-        list.value = listAr[i];
-        if (i == 0){
-            rootNode = list;
-        }
-        if(parentNode)
-            parentNode.node = list;
-        parentNode = list;
-        
-    }
-    return rootNode;
-}
-
 
 @end

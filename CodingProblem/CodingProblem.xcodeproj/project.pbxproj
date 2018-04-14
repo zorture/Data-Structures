@@ -18,6 +18,7 @@
 		B9D4C1172081674800EA9548 /* Trie.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1162081674800EA9548 /* Trie.m */; };
 		B9D4C11B20825BBF00EA9548 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C11A20825BBF00EA9548 /* LinkedList.m */; };
 		B9D4C11E20825BFE00EA9548 /* MergeSortedLists.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C11D20825BFE00EA9548 /* MergeSortedLists.m */; };
+		B9D4C121208280DF00EA9548 /* ReverseList.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C120208280DF00EA9548 /* ReverseList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +57,8 @@
 		B9D4C11A20825BBF00EA9548 /* LinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
 		B9D4C11C20825BFE00EA9548 /* MergeSortedLists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeSortedLists.h; sourceTree = "<group>"; };
 		B9D4C11D20825BFE00EA9548 /* MergeSortedLists.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MergeSortedLists.m; sourceTree = "<group>"; };
+		B9D4C11F208280DF00EA9548 /* ReverseList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseList.h; sourceTree = "<group>"; };
+		B9D4C120208280DF00EA9548 /* ReverseList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,8 @@
 			children = (
 				B9D4C11C20825BFE00EA9548 /* MergeSortedLists.h */,
 				B9D4C11D20825BFE00EA9548 /* MergeSortedLists.m */,
+				B9D4C11F208280DF00EA9548 /* ReverseList.h */,
+				B9D4C120208280DF00EA9548 /* ReverseList.m */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				B9D4C0F32080FBD600EA9548 /* main.m in Sources */,
 				B9D4C11E20825BFE00EA9548 /* MergeSortedLists.m in Sources */,
 				B9D4C11020814EB300EA9548 /* ReverseDigits.m in Sources */,
+				B9D4C121208280DF00EA9548 /* ReverseList.m in Sources */,
 				B9D4C1172081674800EA9548 /* Trie.m in Sources */,
 				B9D4C11B20825BBF00EA9548 /* LinkedList.m in Sources */,
 				B9D4C10920811FBA00EA9548 /* PalindromicSubstring.m in Sources */,
