@@ -24,6 +24,7 @@
     [SubsetSums runSubsetSums];
     [CombinationSum runCombinationSum];
     [Duplicates runDuplicates];
+    [FirstMissing runFirstMissing];
     
 }
 

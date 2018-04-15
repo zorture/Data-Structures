@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B978094F2083B7EB006C5BFC /* Duplicates.m in Sources */ = {isa = PBXBuildFile; fileRef = B978094E2083B7EB006C5BFC /* Duplicates.m */; };
+		B97809522083CB19006C5BFC /* FirstMissing.m in Sources */ = {isa = PBXBuildFile; fileRef = B97809512083CB19006C5BFC /* FirstMissing.m */; };
 		B9D4C0F32080FBD600EA9548 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C0F22080FBD600EA9548 /* main.m */; };
 		B9D4C0FD2080FC0C00EA9548 /* LongestSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C0FC2080FC0C00EA9548 /* LongestSubstring.m */; };
 		B9D4C1022080FC9500EA9548 /* AppRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1012080FC9500EA9548 /* AppRunner.m */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		B978094D2083B7EB006C5BFC /* Duplicates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Duplicates.h; sourceTree = "<group>"; };
 		B978094E2083B7EB006C5BFC /* Duplicates.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Duplicates.m; sourceTree = "<group>"; };
+		B97809502083CB19006C5BFC /* FirstMissing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstMissing.h; sourceTree = "<group>"; };
+		B97809512083CB19006C5BFC /* FirstMissing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstMissing.m; sourceTree = "<group>"; };
 		B9D4C0EF2080FBD600EA9548 /* CodingProblem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingProblem; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D4C0F22080FBD600EA9548 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9D4C0FB2080FC0C00EA9548 /* LongestSubstring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongestSubstring.h; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				B9D4C1122081671000EA9548 /* PhoneNumberLetter.m */,
 				B978094D2083B7EB006C5BFC /* Duplicates.h */,
 				B978094E2083B7EB006C5BFC /* Duplicates.m */,
+				B97809502083CB19006C5BFC /* FirstMissing.h */,
+				B97809512083CB19006C5BFC /* FirstMissing.m */,
 			);
 			path = Numbers;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 			files = (
 				B9D4C10C208140CD00EA9548 /* ZigZagString.m in Sources */,
 				B9D4C1132081671000EA9548 /* PhoneNumberLetter.m in Sources */,
+				B97809522083CB19006C5BFC /* FirstMissing.m in Sources */,
 				B9D4C1022080FC9500EA9548 /* AppRunner.m in Sources */,
 				B9D4C1282082E0D300EA9548 /* NQueenProblem.m in Sources */,
 				B9D4C0FD2080FC0C00EA9548 /* LongestSubstring.m in Sources */,

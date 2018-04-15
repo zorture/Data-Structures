@@ -19,3 +19,4 @@
 #import "NQueenProblem.h"
 #import "SubsetSums.h"
 #import "Duplicates.h"
+#import "FirstMissing.h"
