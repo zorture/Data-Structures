@@ -193,6 +193,8 @@
 				B9D4C1242082DF6200EA9548 /* SubsetSums.m */,
 				B9D4C1262082E0D300EA9548 /* NQueenProblem.h */,
 				B9D4C1272082E0D300EA9548 /* NQueenProblem.m */,
+				B9D4C12A2083255A00EA9548 /* CombinationSum.h */,
+				B9D4C12B2083255A00EA9548 /* CombinationSum.m */,
 			);
 			path = BackTracking;
 			sourceTree = "<group>";
@@ -200,8 +202,6 @@
 		B9D4C1292083254200EA9548 /* Greedy */ = {
 			isa = PBXGroup;
 			children = (
-				B9D4C12A2083255A00EA9548 /* CombinationSum.h */,
-				B9D4C12B2083255A00EA9548 /* CombinationSum.m */,
 			);
 			path = Greedy;
 			sourceTree = "<group>";
