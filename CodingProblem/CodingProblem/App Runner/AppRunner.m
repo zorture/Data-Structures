@@ -20,6 +20,8 @@
     [PhoneNumberLetter runPhoneNumberLetter];
     [MergeSortedLists runMergeSortedLists];
     [ReverseList runReverseList];
+    [CombinationSum runCombinationSum];
+    [NQueenProblem runNQueenProblem];
     
 }
 

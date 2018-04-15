@@ -15,3 +15,5 @@
 #import "PhoneNumberLetter.h"
 #import "MergeSortedLists.h"
 #import "ReverseList.h"
+#import "CombinationSum.h"
+#import "NQueenProblem.h"

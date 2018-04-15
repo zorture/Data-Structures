@@ -19,6 +19,8 @@
 		B9D4C11B20825BBF00EA9548 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C11A20825BBF00EA9548 /* LinkedList.m */; };
 		B9D4C11E20825BFE00EA9548 /* MergeSortedLists.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C11D20825BFE00EA9548 /* MergeSortedLists.m */; };
 		B9D4C121208280DF00EA9548 /* ReverseList.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C120208280DF00EA9548 /* ReverseList.m */; };
+		B9D4C1252082DF6200EA9548 /* CombinationSum.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1242082DF6200EA9548 /* CombinationSum.m */; };
+		B9D4C1282082E0D300EA9548 /* NQueenProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1272082E0D300EA9548 /* NQueenProblem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +61,10 @@
 		B9D4C11D20825BFE00EA9548 /* MergeSortedLists.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MergeSortedLists.m; sourceTree = "<group>"; };
 		B9D4C11F208280DF00EA9548 /* ReverseList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseList.h; sourceTree = "<group>"; };
 		B9D4C120208280DF00EA9548 /* ReverseList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseList.m; sourceTree = "<group>"; };
+		B9D4C1232082DF6200EA9548 /* CombinationSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombinationSum.h; sourceTree = "<group>"; };
+		B9D4C1242082DF6200EA9548 /* CombinationSum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombinationSum.m; sourceTree = "<group>"; };
+		B9D4C1262082E0D300EA9548 /* NQueenProblem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NQueenProblem.h; sourceTree = "<group>"; };
+		B9D4C1272082E0D300EA9548 /* NQueenProblem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NQueenProblem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 		B9D4C0F92080FBF600EA9548 /* ProblemsType */ = {
 			isa = PBXGroup;
 			children = (
+				B9D4C1222082DF4400EA9548 /* BackTracking */,
 				B9D4C11820825BAE00EA9548 /* List */,
 				B9D4C10D20814EA600EA9548 /* Numbers */,
 				B9D4C1032081134000EA9548 /* Arrays */,
@@ -175,6 +182,17 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		B9D4C1222082DF4400EA9548 /* BackTracking */ = {
+			isa = PBXGroup;
+			children = (
+				B9D4C1232082DF6200EA9548 /* CombinationSum.h */,
+				B9D4C1242082DF6200EA9548 /* CombinationSum.m */,
+				B9D4C1262082E0D300EA9548 /* NQueenProblem.h */,
+				B9D4C1272082E0D300EA9548 /* NQueenProblem.m */,
+			);
+			path = BackTracking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,7 +252,9 @@
 				B9D4C10C208140CD00EA9548 /* ZigZagString.m in Sources */,
 				B9D4C1132081671000EA9548 /* PhoneNumberLetter.m in Sources */,
 				B9D4C1022080FC9500EA9548 /* AppRunner.m in Sources */,
+				B9D4C1282082E0D300EA9548 /* NQueenProblem.m in Sources */,
 				B9D4C0FD2080FC0C00EA9548 /* LongestSubstring.m in Sources */,
+				B9D4C1252082DF6200EA9548 /* CombinationSum.m in Sources */,
 				B9D4C1062081136300EA9548 /* MedianInArrays.m in Sources */,
 				B9D4C0F32080FBD600EA9548 /* main.m in Sources */,
 				B9D4C11E20825BFE00EA9548 /* MergeSortedLists.m in Sources */,
