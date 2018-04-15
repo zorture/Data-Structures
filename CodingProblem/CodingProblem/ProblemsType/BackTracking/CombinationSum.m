@@ -22,7 +22,7 @@ static CombinationSum* sharedCombSum;
 
 + (void)runCombinationSum{
     sharedCombSum = [[CombinationSum alloc] init];
-    [sharedCombSum fndSolution];
+    [sharedCombSum findSolution];
 }
 
 - (instancetype)init{
@@ -30,7 +30,7 @@ static CombinationSum* sharedCombSum;
     return self;
 }
 
--(void)fndSolution{
+-(void)findSolution{
     self.inputAr = [NSArray arrayWithObjects:@2,@4,@6,@8, nil];
     self.target = 8;
     self.solutionAr = [NSMutableArray array];

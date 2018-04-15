@@ -23,6 +23,7 @@
     [NQueenProblem runNQueenProblem];
     [SubsetSums runSubsetSums];
     [CombinationSum runCombinationSum];
+    [Duplicates runDuplicates];
     
 }
 
