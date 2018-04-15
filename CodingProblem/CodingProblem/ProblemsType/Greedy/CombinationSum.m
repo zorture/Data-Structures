@@ -12,12 +12,9 @@
 
 + (void)runCombinationSum{
     
+
+    
 }
 
-+(NSArray*)allCombinationToSet:(NSArray*)dataSet{
-    
-    
-    return @[];
-}
 
 @end

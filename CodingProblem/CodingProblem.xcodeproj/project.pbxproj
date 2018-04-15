@@ -19,8 +19,9 @@
 		B9D4C11B20825BBF00EA9548 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C11A20825BBF00EA9548 /* LinkedList.m */; };
 		B9D4C11E20825BFE00EA9548 /* MergeSortedLists.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C11D20825BFE00EA9548 /* MergeSortedLists.m */; };
 		B9D4C121208280DF00EA9548 /* ReverseList.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C120208280DF00EA9548 /* ReverseList.m */; };
-		B9D4C1252082DF6200EA9548 /* CombinationSum.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1242082DF6200EA9548 /* CombinationSum.m */; };
+		B9D4C1252082DF6200EA9548 /* SubsetSums.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1242082DF6200EA9548 /* SubsetSums.m */; };
 		B9D4C1282082E0D300EA9548 /* NQueenProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1272082E0D300EA9548 /* NQueenProblem.m */; };
+		B9D4C12C2083255A00EA9548 /* CombinationSum.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C12B2083255A00EA9548 /* CombinationSum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,10 +62,12 @@
 		B9D4C11D20825BFE00EA9548 /* MergeSortedLists.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MergeSortedLists.m; sourceTree = "<group>"; };
 		B9D4C11F208280DF00EA9548 /* ReverseList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseList.h; sourceTree = "<group>"; };
 		B9D4C120208280DF00EA9548 /* ReverseList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseList.m; sourceTree = "<group>"; };
-		B9D4C1232082DF6200EA9548 /* CombinationSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombinationSum.h; sourceTree = "<group>"; };
-		B9D4C1242082DF6200EA9548 /* CombinationSum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombinationSum.m; sourceTree = "<group>"; };
+		B9D4C1232082DF6200EA9548 /* SubsetSums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubsetSums.h; sourceTree = "<group>"; };
+		B9D4C1242082DF6200EA9548 /* SubsetSums.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubsetSums.m; sourceTree = "<group>"; };
 		B9D4C1262082E0D300EA9548 /* NQueenProblem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NQueenProblem.h; sourceTree = "<group>"; };
 		B9D4C1272082E0D300EA9548 /* NQueenProblem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NQueenProblem.m; sourceTree = "<group>"; };
+		B9D4C12A2083255A00EA9548 /* CombinationSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinationSum.h; sourceTree = "<group>"; };
+		B9D4C12B2083255A00EA9548 /* CombinationSum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinationSum.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,7 @@
 		B9D4C0F92080FBF600EA9548 /* ProblemsType */ = {
 			isa = PBXGroup;
 			children = (
+				B9D4C1292083254200EA9548 /* Greedy */,
 				B9D4C1222082DF4400EA9548 /* BackTracking */,
 				B9D4C11820825BAE00EA9548 /* List */,
 				B9D4C10D20814EA600EA9548 /* Numbers */,
@@ -185,12 +189,21 @@
 		B9D4C1222082DF4400EA9548 /* BackTracking */ = {
 			isa = PBXGroup;
 			children = (
-				B9D4C1232082DF6200EA9548 /* CombinationSum.h */,
-				B9D4C1242082DF6200EA9548 /* CombinationSum.m */,
+				B9D4C1232082DF6200EA9548 /* SubsetSums.h */,
+				B9D4C1242082DF6200EA9548 /* SubsetSums.m */,
 				B9D4C1262082E0D300EA9548 /* NQueenProblem.h */,
 				B9D4C1272082E0D300EA9548 /* NQueenProblem.m */,
 			);
 			path = BackTracking;
+			sourceTree = "<group>";
+		};
+		B9D4C1292083254200EA9548 /* Greedy */ = {
+			isa = PBXGroup;
+			children = (
+				B9D4C12A2083255A00EA9548 /* CombinationSum.h */,
+				B9D4C12B2083255A00EA9548 /* CombinationSum.m */,
+			);
+			path = Greedy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +267,7 @@
 				B9D4C1022080FC9500EA9548 /* AppRunner.m in Sources */,
 				B9D4C1282082E0D300EA9548 /* NQueenProblem.m in Sources */,
 				B9D4C0FD2080FC0C00EA9548 /* LongestSubstring.m in Sources */,
-				B9D4C1252082DF6200EA9548 /* CombinationSum.m in Sources */,
+				B9D4C1252082DF6200EA9548 /* SubsetSums.m in Sources */,
 				B9D4C1062081136300EA9548 /* MedianInArrays.m in Sources */,
 				B9D4C0F32080FBD600EA9548 /* main.m in Sources */,
 				B9D4C11E20825BFE00EA9548 /* MergeSortedLists.m in Sources */,
@@ -262,6 +275,7 @@
 				B9D4C121208280DF00EA9548 /* ReverseList.m in Sources */,
 				B9D4C1172081674800EA9548 /* Trie.m in Sources */,
 				B9D4C11B20825BBF00EA9548 /* LinkedList.m in Sources */,
+				B9D4C12C2083255A00EA9548 /* CombinationSum.m in Sources */,
 				B9D4C10920811FBA00EA9548 /* PalindromicSubstring.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

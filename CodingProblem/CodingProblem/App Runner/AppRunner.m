@@ -22,6 +22,7 @@
     [ReverseList runReverseList];
     [CombinationSum runCombinationSum];
     [NQueenProblem runNQueenProblem];
+    [SubsetSums runSubsetSums];
     
 }
 

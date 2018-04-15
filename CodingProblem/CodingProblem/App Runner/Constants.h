@@ -17,3 +17,4 @@
 #import "ReverseList.h"
 #import "CombinationSum.h"
 #import "NQueenProblem.h"
+#import "SubsetSums.h"
