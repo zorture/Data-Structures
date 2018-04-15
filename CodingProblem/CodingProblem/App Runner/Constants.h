@@ -21,3 +21,4 @@
 #import "Duplicates.h"
 #import "FirstMissing.h"
 #import "StackSort.h"
+#import "SortingData.h"

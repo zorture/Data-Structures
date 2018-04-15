@@ -26,6 +26,7 @@
     [Duplicates runDuplicates];
     [FirstMissing runFirstMissing];
     [StackSort runStackSort];
+    [SortingData runSortingData];
     
 }
 

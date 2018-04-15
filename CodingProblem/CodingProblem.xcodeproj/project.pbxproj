@@ -11,6 +11,7 @@
 		B97809522083CB19006C5BFC /* FirstMissing.m in Sources */ = {isa = PBXBuildFile; fileRef = B97809512083CB19006C5BFC /* FirstMissing.m */; };
 		B97809562083E4AD006C5BFC /* StackSort.m in Sources */ = {isa = PBXBuildFile; fileRef = B97809552083E4AD006C5BFC /* StackSort.m */; };
 		B97809592083E510006C5BFC /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = B97809582083E510006C5BFC /* Stack.m */; };
+		B978095C2083FD9B006C5BFC /* SortingData.m in Sources */ = {isa = PBXBuildFile; fileRef = B978095B2083FD9B006C5BFC /* SortingData.m */; };
 		B9D4C0F32080FBD600EA9548 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C0F22080FBD600EA9548 /* main.m */; };
 		B9D4C0FD2080FC0C00EA9548 /* LongestSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C0FC2080FC0C00EA9548 /* LongestSubstring.m */; };
 		B9D4C1022080FC9500EA9548 /* AppRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1012080FC9500EA9548 /* AppRunner.m */; };
@@ -49,6 +50,8 @@
 		B97809552083E4AD006C5BFC /* StackSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackSort.m; sourceTree = "<group>"; };
 		B97809572083E510006C5BFC /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		B97809582083E510006C5BFC /* Stack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		B978095A2083FD9B006C5BFC /* SortingData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortingData.h; sourceTree = "<group>"; };
+		B978095B2083FD9B006C5BFC /* SortingData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortingData.m; sourceTree = "<group>"; };
 		B9D4C0EF2080FBD600EA9548 /* CodingProblem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingProblem; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D4C0F22080FBD600EA9548 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9D4C0FB2080FC0C00EA9548 /* LongestSubstring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongestSubstring.h; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 			children = (
 				B97809542083E4AD006C5BFC /* StackSort.h */,
 				B97809552083E4AD006C5BFC /* StackSort.m */,
+				B978095A2083FD9B006C5BFC /* SortingData.h */,
+				B978095B2083FD9B006C5BFC /* SortingData.m */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B978095C2083FD9B006C5BFC /* SortingData.m in Sources */,
 				B9D4C10C208140CD00EA9548 /* ZigZagString.m in Sources */,
 				B9D4C1132081671000EA9548 /* PhoneNumberLetter.m in Sources */,
 				B97809522083CB19006C5BFC /* FirstMissing.m in Sources */,
