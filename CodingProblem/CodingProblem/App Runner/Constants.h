@@ -20,3 +20,4 @@
 #import "SubsetSums.h"
 #import "Duplicates.h"
 #import "FirstMissing.h"
+#import "StackSort.h"

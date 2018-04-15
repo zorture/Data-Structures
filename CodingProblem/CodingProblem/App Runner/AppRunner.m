@@ -25,6 +25,7 @@
     [CombinationSum runCombinationSum];
     [Duplicates runDuplicates];
     [FirstMissing runFirstMissing];
+    [StackSort runStackSort];
     
 }
 
