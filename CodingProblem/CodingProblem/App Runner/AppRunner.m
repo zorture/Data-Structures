@@ -27,6 +27,8 @@
     [FirstMissing runFirstMissing];
     [StackSort runStackSort];
     [SortingData runSortingData];
+    [MathsProblem runMathsProblem];
+    [LongestWord runLongestWord];
     
 }
 

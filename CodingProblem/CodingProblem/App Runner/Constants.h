@@ -22,3 +22,6 @@
 #import "FirstMissing.h"
 #import "StackSort.h"
 #import "SortingData.h"
+#import "MathsProblem.h"
+#import "LongestWord.h"
+
