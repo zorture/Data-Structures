@@ -6,16 +6,11 @@
 //  Copyright © 2018 Xorture. All rights reserved.
 //
 
-/*
- 
- Summary
- 
+/*    Summary
  Time complexity
  Average Case: O(nLogn)
  Worst Case: O(n^2)
-
  In-Space sorting algoritym
- 
 */
 
 import Foundation
@@ -23,8 +18,8 @@ import Foundation
 class QuickSort {
     
     class func runDemo() {
-        //let array = [95,22,90,30,70,20,55,80,10,5,2]
-        var array = [7,2,1,6,8,5,3,4]
+        var array = [95,22,90,30,70,20,55,80,10,5,2]
+        //var array = [7,2,1,6,8,5,3,4]
         
         let object = QuickSort()
         print("unsorted array:" + array.debugDescription)
@@ -50,17 +45,11 @@ class QuickSort {
         var pIndex = start
         for i in start...end-1{
             if array[i] <= pivot{
-                let temp = array[i]
-                array[i] = array[pIndex]
-                array[pIndex] = temp
+                array.swapAt(i, pIndex)
                 pIndex += 1
             }
         }
-        
-        let temp = array[pIndex]
-        array[pIndex] = pivot
-        array[end] = temp
-        
+        array.swapAt(pIndex, end)        
         return pIndex
     }
     
