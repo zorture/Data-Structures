@@ -24,4 +24,7 @@
 #import "SortingData.h"
 #import "MathsProblem.h"
 #import "LongestWord.h"
-
+#import "LexiographicString.h"
+#import "StringReverse.h"
+#import "RangeSearch.h"
+#import "Subsets.h"

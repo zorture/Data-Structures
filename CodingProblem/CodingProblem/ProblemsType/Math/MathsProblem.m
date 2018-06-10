@@ -28,10 +28,15 @@ static MathsProblem* sharedMathsProblem;
 }
 
 - (void)findSolution{
-    NSInteger square = [self findSquare:2];
+    NSInteger square = [self findSquare:3];
     NSLog(@"%ld",(long)square);
     [self findSquareRoot:49];
     [self shiftBits];
+    
+    atoiTheString("123");
+    int arr[] = {5,2,3,1,1 };
+    int n = sizeof(arr)/sizeof(arr[0]);
+    divideIntArray(arr,n);
 }
 
 - (void)shiftBits{
@@ -43,11 +48,21 @@ static MathsProblem* sharedMathsProblem;
 }
 
 - (NSInteger)findSquareRoot:(NSInteger)number{
-    float i;
-    for (i=0.01; i*i<number; i+=0.01);
+    // Base cases
+    if (number == 0 || number == 1)
+        return number;
     
-    NSLog(@"%0.02f",i);
-    return 0;
+    // Staring from 1, try all numbers until
+    // i*i is greater than or equal to x.
+    int i = 1, result = 1;
+    while (result < number)
+    {
+        if (result == number)
+            return result;
+        i++;
+        result = i*i;
+    }
+    return i-1;
 }
 
 - (NSInteger)findSquare:(NSInteger)number{
@@ -66,6 +81,57 @@ static MathsProblem* sharedMathsProblem;
     else
         val = ([self findSquare:x] << 2);
     return val;
+}
+
+int atoiTheString(char *s)
+{
+    int result = 0;
+    
+    while (*s)
+        result = 10*result + *s++ - '0';
+    
+    return result;
+}
+
+int findSplitPoint(int arr[], int n)
+{
+    int leftSum = 0 ;
+    
+    // traverse array element
+    for (int i = 0; i < n; i++)
+    {
+        // add current element to left Sum
+        leftSum += arr[i] ;
+        
+        // find sum of rest array elements (rightSum)
+        int rightSum = 0 ;
+        for (int j = i+1 ; j < n ; j++ )
+            rightSum += arr[j] ;
+        
+        // split point index
+        if (leftSum == rightSum)
+            return i+1 ;
+    }
+    
+    // if it is not possible to split array into
+    // two parts
+    return -1;
+}
+
+void divideIntArray(int arr[], int n)
+{
+    int splitPoint = findSplitPoint(arr, n);
+    
+    if (splitPoint == -1 || splitPoint == n )
+    {
+        return;
+    }
+    for (int i = 0; i < n; i++)
+    {
+        if(splitPoint == i)
+            NSLog(@"%d",arr[i]);
+        
+    }
 }
 
 @end

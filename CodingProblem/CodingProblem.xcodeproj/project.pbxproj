@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B945F7742088059200562DC0 /* RangeSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = B945F7732088059200562DC0 /* RangeSearch.m */; };
+		B945F77720882E4A00562DC0 /* Subsets.m in Sources */ = {isa = PBXBuildFile; fileRef = B945F77620882E4A00562DC0 /* Subsets.m */; };
 		B978094F2083B7EB006C5BFC /* Duplicates.m in Sources */ = {isa = PBXBuildFile; fileRef = B978094E2083B7EB006C5BFC /* Duplicates.m */; };
 		B97809522083CB19006C5BFC /* FirstMissing.m in Sources */ = {isa = PBXBuildFile; fileRef = B97809512083CB19006C5BFC /* FirstMissing.m */; };
 		B97809562083E4AD006C5BFC /* StackSort.m in Sources */ = {isa = PBXBuildFile; fileRef = B97809552083E4AD006C5BFC /* StackSort.m */; };
@@ -14,6 +16,8 @@
 		B978095C2083FD9B006C5BFC /* SortingData.m in Sources */ = {isa = PBXBuildFile; fileRef = B978095B2083FD9B006C5BFC /* SortingData.m */; };
 		B978096020840C13006C5BFC /* MathsProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = B978095F20840C13006C5BFC /* MathsProblem.m */; };
 		B978096320842989006C5BFC /* LongestWord.m in Sources */ = {isa = PBXBuildFile; fileRef = B978096220842989006C5BFC /* LongestWord.m */; };
+		B9C4791C2086AAF500F4263A /* LexiographicString.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C4791B2086AAF500F4263A /* LexiographicString.m */; };
+		B9C4791F2086DE3800F4263A /* StringReverse.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C4791E2086DE3800F4263A /* StringReverse.m */; };
 		B9D4C0F32080FBD600EA9548 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C0F22080FBD600EA9548 /* main.m */; };
 		B9D4C0FD2080FC0C00EA9548 /* LongestSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C0FC2080FC0C00EA9548 /* LongestSubstring.m */; };
 		B9D4C1022080FC9500EA9548 /* AppRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4C1012080FC9500EA9548 /* AppRunner.m */; };
@@ -44,6 +48,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B945F7722088059200562DC0 /* RangeSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RangeSearch.h; sourceTree = "<group>"; };
+		B945F7732088059200562DC0 /* RangeSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RangeSearch.m; sourceTree = "<group>"; };
+		B945F77520882E4A00562DC0 /* Subsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Subsets.h; sourceTree = "<group>"; };
+		B945F77620882E4A00562DC0 /* Subsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Subsets.m; sourceTree = "<group>"; };
 		B978094D2083B7EB006C5BFC /* Duplicates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Duplicates.h; sourceTree = "<group>"; };
 		B978094E2083B7EB006C5BFC /* Duplicates.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Duplicates.m; sourceTree = "<group>"; };
 		B97809502083CB19006C5BFC /* FirstMissing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstMissing.h; sourceTree = "<group>"; };
@@ -58,6 +66,10 @@
 		B978095F20840C13006C5BFC /* MathsProblem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathsProblem.m; sourceTree = "<group>"; };
 		B978096120842989006C5BFC /* LongestWord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongestWord.h; sourceTree = "<group>"; };
 		B978096220842989006C5BFC /* LongestWord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongestWord.m; sourceTree = "<group>"; };
+		B9C4791A2086AAF500F4263A /* LexiographicString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LexiographicString.h; sourceTree = "<group>"; };
+		B9C4791B2086AAF500F4263A /* LexiographicString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LexiographicString.m; sourceTree = "<group>"; };
+		B9C4791D2086DE3800F4263A /* StringReverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringReverse.h; sourceTree = "<group>"; };
+		B9C4791E2086DE3800F4263A /* StringReverse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringReverse.m; sourceTree = "<group>"; };
 		B9D4C0EF2080FBD600EA9548 /* CodingProblem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingProblem; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D4C0F22080FBD600EA9548 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9D4C0FB2080FC0C00EA9548 /* LongestSubstring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongestSubstring.h; sourceTree = "<group>"; };
@@ -175,6 +187,12 @@
 				B9D4C10B208140CD00EA9548 /* ZigZagString.m */,
 				B978096120842989006C5BFC /* LongestWord.h */,
 				B978096220842989006C5BFC /* LongestWord.m */,
+				B9C4791A2086AAF500F4263A /* LexiographicString.h */,
+				B9C4791B2086AAF500F4263A /* LexiographicString.m */,
+				B9C4791D2086DE3800F4263A /* StringReverse.h */,
+				B9C4791E2086DE3800F4263A /* StringReverse.m */,
+				B945F77520882E4A00562DC0 /* Subsets.h */,
+				B945F77620882E4A00562DC0 /* Subsets.m */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -209,6 +227,8 @@
 				B978094E2083B7EB006C5BFC /* Duplicates.m */,
 				B97809502083CB19006C5BFC /* FirstMissing.h */,
 				B97809512083CB19006C5BFC /* FirstMissing.m */,
+				B945F7722088059200562DC0 /* RangeSearch.h */,
+				B945F7732088059200562DC0 /* RangeSearch.m */,
 			);
 			path = Numbers;
 			sourceTree = "<group>";
@@ -317,6 +337,7 @@
 				B9D4C10C208140CD00EA9548 /* ZigZagString.m in Sources */,
 				B9D4C1132081671000EA9548 /* PhoneNumberLetter.m in Sources */,
 				B97809522083CB19006C5BFC /* FirstMissing.m in Sources */,
+				B945F7742088059200562DC0 /* RangeSearch.m in Sources */,
 				B9D4C1022080FC9500EA9548 /* AppRunner.m in Sources */,
 				B9D4C1282082E0D300EA9548 /* NQueenProblem.m in Sources */,
 				B978096020840C13006C5BFC /* MathsProblem.m in Sources */,
@@ -327,6 +348,7 @@
 				B97809592083E510006C5BFC /* Stack.m in Sources */,
 				B9D4C0F32080FBD600EA9548 /* main.m in Sources */,
 				B97809562083E4AD006C5BFC /* StackSort.m in Sources */,
+				B945F77720882E4A00562DC0 /* Subsets.m in Sources */,
 				B9D4C11E20825BFE00EA9548 /* MergeSortedLists.m in Sources */,
 				B9D4C11020814EB300EA9548 /* ReverseDigits.m in Sources */,
 				B978096320842989006C5BFC /* LongestWord.m in Sources */,
@@ -334,7 +356,9 @@
 				B9D4C1172081674800EA9548 /* Trie.m in Sources */,
 				B9D4C11B20825BBF00EA9548 /* LinkedList.m in Sources */,
 				B9D4C12C2083255A00EA9548 /* CombinationSum.m in Sources */,
+				B9C4791F2086DE3800F4263A /* StringReverse.m in Sources */,
 				B9D4C10920811FBA00EA9548 /* PalindromicSubstring.m in Sources */,
+				B9C4791C2086AAF500F4263A /* LexiographicString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

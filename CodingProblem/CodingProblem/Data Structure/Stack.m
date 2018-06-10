@@ -23,7 +23,7 @@
 }
 
 - (void)push:(id)value{
-    [self.stackArray insertObject:value atIndex:0];
+    [self.stackArray addObject:value];
 }
 
 - (id)pop{

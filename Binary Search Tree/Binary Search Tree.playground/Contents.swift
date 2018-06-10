@@ -69,7 +69,7 @@ func search(rootNode node:Node?, forData data: Int)-> Node?{
 
 print ("\nSearch Item\n")
 
-if search(rootNode: root, forData: 0) != nil{
+if search(rootNode: root, forData: 10) != nil{
     print("Item Present")
 }
 else{
@@ -197,6 +197,13 @@ func inOrderTraversal(rootNode node: Node?) {
     inOrderTraversal(rootNode: node.leftChild)
     print(node.data)
     inOrderTraversal(rootNode: node.rightChild)
+
+//    inOrderTraversal(rootNode: node.rightChild)
+//    print(node.data)
+//    inOrderTraversal(rootNode: node.leftChild)
+    
+    
+
 }
 
 inOrderTraversal(rootNode: root)
@@ -261,7 +268,7 @@ func deleteNode(rootNode node: Node?, withData data: Int)-> Node? {
                 return node.leftChild
             }else {
                 // Case 3 two Child
-                print("Got it")
+                //print("Got it")
                 guard let maxValue = findMax(rootNode: node.leftChild) else {
                     return node
                 }

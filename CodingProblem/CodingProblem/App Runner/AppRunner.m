@@ -30,6 +30,7 @@
     [MathsProblem runMathsProblem];
     [LongestWord runLongestWord];
     
+    [Subsets runProblem];
 }
 
 + (NSString*)charAtIndex:(NSInteger)index ForString:(NSString*)string {

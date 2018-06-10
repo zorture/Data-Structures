@@ -27,7 +27,7 @@ func stringPermutation(charAr: [Character], countAr: [Int], result: [Character],
     
 }
 
-let string = "AABC"
+let string = "123"
 
 let charArray = Array(string)
 let dict = [Character: Int]()
