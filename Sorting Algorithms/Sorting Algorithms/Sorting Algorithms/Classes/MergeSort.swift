@@ -6,6 +6,19 @@
 //  Copyright © 2018 Xorture. All rights reserved.
 //
 
+/*
+ 
+ Summary
+ 
+ Time complexity
+ Average Case: O(nLogn)
+ 
+ Space Complexity: O(n)
+ 
+ Not an In-Space sorting algoritym
+ 
+ */
+
 import Foundation
 
 class MergeSort  {
@@ -16,7 +29,7 @@ class MergeSort  {
         
         let object = MergeSort()
         print("unsorted array:" + array.debugDescription)
-        print("sorted array: ", object.sortedArray(withArray: array).debugDescription)
+        print("Merge Sort: ", object.mergeSort(withArray: array).debugDescription)
     }
     
     func mergeArray(leftArray: [Int], rightArray: [Int])-> [Int]{
@@ -48,7 +61,7 @@ class MergeSort  {
         return mainArray
     }
     
-    func sortedArray(withArray array:[Int]) -> [Int]{
+    func mergeSort(withArray array:[Int]) -> [Int]{
         
         //print(array)
         if(array.count < 2){
@@ -68,7 +81,7 @@ class MergeSort  {
             rightArray.append(array[i])
         }
         
-        let mergedArray = mergeArray(leftArray: sortedArray(withArray: leftArray), rightArray: sortedArray(withArray: rightArray))
+        let mergedArray = mergeArray(leftArray: mergeSort(withArray: leftArray), rightArray: mergeSort(withArray: rightArray))
         return mergedArray
     }
 

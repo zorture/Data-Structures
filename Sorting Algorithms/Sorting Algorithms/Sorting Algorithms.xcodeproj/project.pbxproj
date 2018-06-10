@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B9A1D2BE20CD97E4000F6B99 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A1D2BD20CD97E4000F6B99 /* main.swift */; };
 		B9A1D2CB20CD9997000F6B99 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A1D2CA20CD9997000F6B99 /* MergeSort.swift */; };
+		B9A1D2CD20CD9C89000F6B99 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A1D2CC20CD9C89000F6B99 /* QuickSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		B9A1D2BA20CD97E4000F6B99 /* Sorting Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Sorting Algorithms"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A1D2BD20CD97E4000F6B99 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B9A1D2CA20CD9997000F6B99 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		B9A1D2CC20CD9C89000F6B99 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				B9A1D2CA20CD9997000F6B99 /* MergeSort.swift */,
+				B9A1D2CC20CD9C89000F6B99 /* QuickSort.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9A1D2CB20CD9997000F6B99 /* MergeSort.swift in Sources */,
+				B9A1D2CD20CD9C89000F6B99 /* QuickSort.swift in Sources */,
 				B9A1D2BE20CD97E4000F6B99 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

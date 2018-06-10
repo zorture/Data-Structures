@@ -9,3 +9,4 @@
 import Foundation
 
 MergeSort.runDemo()
+QuickSort.runDemo()
