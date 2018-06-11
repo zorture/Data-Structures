@@ -8,7 +8,7 @@
 
 import Foundation
 
-//MergeSort.runDemo()
-//QuickSort.runDemo()
-//SelectionSort.runDemo()
+MergeSort.runDemo()
+QuickSort.runDemo()
+SelectionSort.runDemo()
 HeapSort.runDemo()

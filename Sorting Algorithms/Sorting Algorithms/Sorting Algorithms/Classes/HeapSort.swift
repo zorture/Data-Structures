@@ -21,13 +21,15 @@ import Foundation
 class HeapSort  {
     
     class func runDemo() {
-        //let array = [95,22,90,30,70,20,55,80,10,5,2]
-        var array = [4,10,3,5,1]
-        
+        var array = [95,22,90,30,70,20,55,80,10,5,2]
+
+        let thisTime = Date()
         let object = HeapSort()
         print("unsorted array:" + array.debugDescription)
         object.heapSort(array: &array)
-        print("Heap Sort: ", array.debugDescription)
+        let elapsed = Date().timeIntervalSince(thisTime)
+        print("Heap Sort: " + array.debugDescription + " Time ::" + elapsed.debugDescription)
+
     }
     
 
