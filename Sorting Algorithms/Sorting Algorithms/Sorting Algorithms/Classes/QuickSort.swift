@@ -18,7 +18,8 @@ import Foundation
 class QuickSort {
     
     class func runDemo() {
-        var array = [95,22,90,30,70,20,55,80,10,5,2]
+        //var array = [95,22,90,30,70,20,55,80,10,5,2]
+        var array = [2,5,3,4]
         let thisTime = Date()
         
         let object = QuickSort()
